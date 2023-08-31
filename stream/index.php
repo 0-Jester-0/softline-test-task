@@ -101,6 +101,15 @@ if (CModule::IncludeModule('calendar'))
 	);
 }
 
+/** Подключение виджета со списком компаний на странице /stream */
+$APPLICATION->IncludeComponent(
+	'mart.widgets:company.list',
+	'widget', [
+	"QUANTITY" => 1,
+	"ACTIVITY" => false,
+	"BLOCK_HEIGHT" => 5
+]);
+
 if (CModule::IncludeModule('tasks'))
 {
 	$APPLICATION->IncludeComponent(

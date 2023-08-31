@@ -1,0 +1,44 @@
+/* Убирает синию окантовку у кнопки при нажатии */
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+/*
+ * Округление углов у всего аккордиона
+ * !important" чтобы перебить стили bootstrap (вынужденная мера)
+ */
+.accordion {
+    border-radius: 12px !important;
+}
+
+/*
+ * Округление углов у элемента аккордиона
+ * !important" чтобы перебить стили bootstrap (вынужденная мера)
+ */
+.accordion-item {
+    border-radius: 12px 12px !important;
+}
+
+/*
+ * Округление верхних углов у кнопки аккордиона (при развернутом списке)
+ * !important" чтобы перебить стили bootstrap (вынужденная мера)
+ */
+.accordion-button {
+    border-radius: 12px 12px 0px 0px !important;
+}
+
+/*
+ * Округление углов у кнопки аккордиона (при свёрнутом списке)
+ * !important" чтобы перебить стили bootstrap (вынужденная мера)
+ */
+.accordion-button.collapsed {
+    border-radius: 12px 12px 12px 12px !important;
+}
+
+/*
+ * Округление нижних углов у тела аккордиона (списка компаний)
+ * !important" чтобы перебить стили bootstrap (вынужденная мера)
+ */
+.accordion-collapse.accordion-body {
+    border-radius: 0px 0px 12px 12px !important;
+}
